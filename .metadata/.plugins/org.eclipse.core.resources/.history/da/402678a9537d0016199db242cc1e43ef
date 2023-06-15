@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Pentigon {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+
+System.out.println("Enter the radius" + "\n");
+double r = input.nextDouble();
+
+
+double s = (2 *r)* (Math.sin(Math.PI/5));
+double area = (5*Math.pow(s,2))/(4* (Math.tan(Math.PI/5)));
+
+double rounded = (double) Math.round(area*100)/100;
+
+
+System.out.println(" The area of the pentagon is " + rounded);
+
+	}
+
+	}
+

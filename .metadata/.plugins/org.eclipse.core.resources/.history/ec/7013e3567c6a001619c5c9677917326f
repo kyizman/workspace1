@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Lab_2_2 {
+public static void main(String args[]){
+Scanner Input=  new Scanner (System.in);
+	System.out.print("Input Values:");
+	double value1 = Input.nextDouble();
+	double value2 = Input.nextDouble(); 
+	//To declare that there are 2 imput values
+System.out.println("R Value =" + value1 + "\n" + "T value = " + value2 + "\n");
+//To get the value and lable the inital numbers
+System.out.println("Sum:" + (value1 + value2 ));
+// To get the sum of the two values
+System.out.println("Diffrence A-B:" + (value1-value2) + "\n" + "Diffrence B-A:" + (value2 - value1) + "\n" );
+//Lable and aquire the diffrence of both sets of values
+System.out.println("Product:" + value1 * value2);
+//Multiply values
+}
+
+
+
+}

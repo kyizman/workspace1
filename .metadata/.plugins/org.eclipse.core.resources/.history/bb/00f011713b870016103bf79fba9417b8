@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class MultiplicationTable {
+public static void main(String [] args){
+	Scanner input = new Scanner(System.in);
+	System.out.println("Enter a number");
+	int enter = input.nextInt();
+	System.out.print("*");
+	for (int count = 1 ; count <= enter ; count++){
+		System.out.println( + (count)+ " " + (count * 2) + " "+(count *3) +" "+ (count *4) +" " +(count *5 )+ " "+( count *6));
+		for(int addnumber = 1 ; addnumber <=enter ;addnumber ++){
+			System.out.print(addnumber);
+			System.out.print(addnumber*count);
+		}
+	}
+}
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class SumDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	Scanner input = new Scanner(System.in);
+	
+	system.out.println(" Enter a Number Between 0 and 1000");
+	
+	
+	
+	
+}

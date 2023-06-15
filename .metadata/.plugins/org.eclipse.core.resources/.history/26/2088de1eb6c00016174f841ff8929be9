@@ -1,0 +1,17 @@
+public class Trialanderror
+{
+   public static void main (String [] args)
+   {
+      System.out.println(" Hi and WelCOme".trim());
+      System.out.println("Hi and Welcome".replaceFirst("e", "AB"));
+      System.out.println("Hi and Welcome".replace("e", "AB"));
+      System.out.println("Welcome to CS 1301".indexOf('x'));
+      System.out.println("Welcome to CS 1301".indexOf('o',5));
+      System.out.println("Welcome to CS 1301".indexOf("come"));
+      System.out.println("Welcome to Java".indexOf("java",5));
+      System.out.println("Welcome to CS 1301".lastIndexOf('o'));
+      System.out.println("Welcome to CS 1301".lastIndexOf('o',5));
+      System.out.println("Welcome to Java".contains("Java"));
+
+   }
+}

@@ -1,0 +1,6 @@
+import java.util.*;
+public class SubString {
+Scanner input = new Scanner(System.in);
+{
+}
+}

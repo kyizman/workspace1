@@ -1,0 +1,115 @@
+import java.util.Scanner;
+
+public class Crapsgame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		boolean cont = false;
+		int firstroll;
+		int secondroll;
+		int add;
+		int number = 0 ;
+		int r1 =0;
+		int r2 =0;
+	
+		
+		do{
+			System.out.println("Would you like to play a game of craps (yes/no)");
+			String answer = input.next();
+			if(answer.equals("yes"))
+			{
+				firstroll = RollDice();
+				secondroll =RollDice();
+				
+				add = firstroll + secondroll;
+				System.out.println(add);
+				if (add == 2 || add== 3 || add == 12)
+				{
+					System.out.println("You rolled " + firstroll + " + " + secondroll + " = " + add);
+				System.out.println("You loose");
+				}
+				else if(add == 7 || add == 11)
+				{
+					System.out.println("You rolled " + firstroll + " + " + secondroll + " = " + add);
+
+					System.out.println("You win");
+					
+				}
+				
+					
+						else
+						{
+							
+							System.out.println("You rolled " + firstroll+ " + " + secondroll + " = " + add);
+							{while( number != 7)
+							{
+								r1 = RollDice();
+							 	r2 = RollDice();
+							number = r1 + r2;
+
+							if (number == 7)
+							{
+								System.out.println("You rolled " + r1 + " + " + r2 + " = " + number);
+							System.out.println("You loose");
+						break;
+							}
+							
+							
+							else 
+							{
+								System.out.println("You rolled " + r1 + " + " + r2 + " = " + number);
+
+								System.out.println("You win");
+break;								
+							}
+							}
+						}
+						}
+			}
+					
+				
+			
+			
+				
+			
+			else
+			{
+				System.out.println("Move along then your taking up space at the table");
+			}	
+	
+		//prompt the users if they would like to re run the program
+		System.out.println("Would you Like to Run the Program Again? (yes/no)");
+		//take user input
+
+		String rerun = input.next();
+		//if they would like to re run the program changes cont to true
+		if(rerun.equalsIgnoreCase("yes"))
+			cont = true;
+
+		//terminates program if no loop is needed
+		else
+		{
+			cont = false;
+			System.out.println(" Thats all folks.");
+		}
+
+		}while(cont);// resets do wile 
+
+		}
+	
+	public static int RollDice() {
+
+		int random = (int) (1 + Math.random() * 6);
+
+		return random;
+	}
+
+
+}
+
+
+
+
+

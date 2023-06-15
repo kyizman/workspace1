@@ -1,0 +1,71 @@
+import java.util.*;
+public class RowSorting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a 3 by 3 matrix one row at a time");
+		
+		double n1= input.nextDouble();
+		double n2= input.nextDouble();
+		double n3= input.nextDouble();
+		double n4= input.nextDouble();
+		double n5= input.nextDouble();
+		double n6= input.nextDouble();
+		double n7= input.nextDouble();
+		double n8= input.nextDouble();
+		double n9= input.nextDouble();
+		
+		double[][] sort ={
+				{n1,n2,n3},
+				{n4,n5,n6},
+				{n7,n8,n9},
+		};
+		System.out.println(Arrays.deepToString(sort));
+	           System.out.println("Sorted Array : " + Arrays.deepToString(sortRows(sort)));	
+        }
+		
+	
+
+
+
+
+
+public static double[][] sortRows(double[][] m)
+
+{
+ int width = m.length;
+ int height = m[0].length;
+int area = width*height;
+
+double[] allnumbers = new double[area];
+	
+		Arrays.sort(m[1]);
+		Arrays.sort(m[2]);
+		Arrays.sort(m[3]);
+	     		
+	     		
+	     		
+		
+		
+		
+		
+		
+
+		
+
+	
+	
+	
+	
+	
+			
+
+	return m;
+
+
+	
+}
+}

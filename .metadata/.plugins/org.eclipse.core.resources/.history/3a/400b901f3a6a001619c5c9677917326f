@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Lab_2_1 {
+
+	public static void main(String args[]){
+ Scanner input = new Scanner(System.in);
+System.out.print("insert your intigers:" );
+	int number1= input.nextInt();
+	int number2= input.nextInt();
+	int number3= input.nextInt();
+System.out.println("number 1 = " + number1 + "\n" + "number 2 =" + number2 + "\n" + "number 3 =" + number3 + "\n");
+System.out.println("The Average is=" + (number1 + number2 + number3 / 3 ));
+
+
+}
+}

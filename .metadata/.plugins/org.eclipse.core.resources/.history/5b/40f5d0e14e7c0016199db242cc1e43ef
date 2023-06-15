@@ -1,0 +1,22 @@
+import java.util.*;
+public class SubString {
+	public static void main(String[] args){
+Scanner input = new Scanner(System.in);
+{
+System.out.println("Enter a string");
+String first = input.next();
+
+System.out.println("Enter a second string");
+String second = input.next();
+
+int x = first.indexOf(second);
+
+if (x>0)
+{System.out.println(second + " is a substring of " + first);}
+
+else 
+{System.out.println(second + " is not a substring of " + first);
+}
+}
+}
+}

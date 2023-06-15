@@ -1,0 +1,84 @@
+import java.util.*;
+public class Assinement1 {
+
+	public static void main(String[] args) {
+	
+		double[]list=new double [100];
+		list[0] =4758.806;
+				list[1] =5795.711;
+				list[2] =5014.683;
+				list[3] =7701.312;
+				list[4] =3246.816;
+				list[5] =6989.659;
+				list[6] =5027.265;
+				list[7] =7440.575;
+				list[8] =3019.995;
+				list[9] =7241.105;
+				list[10] =7696.65;
+				list[11] =7098.486;
+				list[12] =4367.961;
+				list[13] =5519.468;
+				list[14] =2894.973;
+				list[15] =7202.648;
+				list[16] =6443.892;
+				list[17] =3033.452;
+				list[18] =3223.899;
+				list[19] =6697.127;
+				list[20] =4898.63;
+				list[21] =2467.281;
+				list[22] =2487.543;
+				list[23] =5172.012;
+				list[24] =3455.382;
+				list[25] =7849.135;
+				list[26] =3166.272;
+				list[27] =4926.252;
+				list[28] =7524.989;
+				list[29] =7755.748;
+				list[30] =6438.85;
+				list[31] =5302.584;
+				list[32] =5458.334;
+				list[33] =5804.818;
+				list[34] =3185.936;
+				list[35] =5759.344;
+				list[36] =7182.593;
+				list[37] =7735.632;
+				list[38] =6649.255;
+				list[39] =6619.317;
+				list[40] =5909.641;
+				list[41] =6634.304;
+				list[42] =7318.31;
+				list[43] =2923.583;
+				list[44] =5803.122;
+				list[45] =6958.059;
+				list[46] =5218.86;
+				list[47] =6094.804;
+				list[48] =3096.456;
+				list[49] =4922.01;
+				list[50] =7275.775;
+				list[51] =3607.358;
+
+	System.out.println("Original");
+	System.out.print(Arrays.toString(list));
+	System.out.println();
+	
+	double[] listrev = reverse(list);
+	System.out.println("Reversed");
+System.out.println(Arrays.toString(listrev));
+	}
+
+public static  double[] reverse (double[] x){
+
+	int up =0;
+	double[] rev = new double[x.length];
+	for(int z=99;z>=0; z--)
+	{
+		rev[z]=x[up];
+		up++;
+	}
+	
+
+return rev;	
+};
+
+
+}

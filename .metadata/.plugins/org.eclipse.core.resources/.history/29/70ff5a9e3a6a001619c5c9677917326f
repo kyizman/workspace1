@@ -1,0 +1,10 @@
+import java.util.Scanner
+public class Lab_2_2 {
+public static void main(String args[]){
+Scanner Input=  new Scanner (System.in);
+	double value1 = Input.nextDouble();
+	double value2 = Input.nextDouble();
+
+}
+
+}

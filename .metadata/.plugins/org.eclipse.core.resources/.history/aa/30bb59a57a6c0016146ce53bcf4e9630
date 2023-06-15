@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+// 1301
+// fall 2016
+// Kyson Manis
+// Monisha Verma
+// lab 1
+
+public class Lab_2_8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+//new scanner
+System.out.println("Enter three sets of points");
+double x1 = input.nextDouble();
+double y1 = input.nextDouble();
+double x2 = input.nextDouble();
+double y2 = input.nextDouble();
+double x3 = input.nextDouble();
+double y3 = input.nextDouble();
+
+
+		
+	}
+
+}

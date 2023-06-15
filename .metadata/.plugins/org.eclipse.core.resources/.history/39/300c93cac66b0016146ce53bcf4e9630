@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Lab_2_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		Scanner scan = new Scanner(System.in) 
+		// variable declaration section
+	      byte byte_value;
+	      short short_value;
+	      int int_value;
+	      long long_value;
+	      float float_value;
+	      double double_value;
+
+	   // read input values section
+	      System.out.print ("Enter byte value: ");
+	      byte_value = scan.nextByte();
+	   
+	   // print out outputs section
+	      System.out.println ("\n");
+	      System.out.println ("The byte value is:\t\t" + byte_value);
+
+	}
+
+}

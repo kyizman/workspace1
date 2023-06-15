@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Lab_2_1 {
+
+	public static void main(String args[]){
+ Scanner input = new Scanner(System.in);
+System.out.print("insert your intigers:" );
+	int number1= input.nextInt();
+	int number2= input.nextInt();
+	int number3= input.nextInt();
+System.out.println("(number1)\n (number2) \n (number3)\n");
+
+
+
+}
+}

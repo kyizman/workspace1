@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Lab_2_1 {
+
+	public static void main(String args[]){
+ Scanner input = new Scanner(System.in);
+System.out.print("insert your intigers:" );
+	int number1= input.nextInt(); // to declair that 3 numbers are the imput
+	int number2= input.nextInt();
+	int number3= input.nextInt();
+System.out.println("Value 1 = " +number1 + "\n" + "Value 2 =" + number2 + "\n" + "Value 3 =" + number3 + "\n");
+//Lable and print each value
+System.out.println("The Average is=" + (number1 + number2 + number3) / 3.0 );
+// To get the average
+
+
+}
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class DrivingCost {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+	System.out.println("Enter a number that is less than 1000 (positive)");
+	int x = input.nextInt();
+	if (x>999); {
+	
+	System.out.println("That number is over 1000");
+	}
+	
+	
+	
+	 if (x<=0)
+	System.out.println("That number is not positive");
+	
+	 else{
+	 int sum = 0;
+	while (x !=0);
+	
+	sum = x % 10;
+ x /=10;
+ 
+ System.out.println(" the sum of the diggits is" + sum);
+	}
+	}
+}

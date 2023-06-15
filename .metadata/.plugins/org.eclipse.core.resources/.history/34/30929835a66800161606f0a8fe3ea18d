@@ -1,0 +1,27 @@
+// Class: 3:00-4
+// Term: Fall 2016
+// Name: Kyson Manis
+// Instructor: Monisha Verma  
+// Assignment:  1
+//CS 1301
+import java.util.Scanner;
+public class Table {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Scanner input = new Scanner (System.in);
+	
+	System.out.print("Insert Number:");
+	double number1 = input.nextDouble();
+	double number2 = input.nextDouble();
+	double number3 = input.nextDouble();
+	double number4 = input.nextDouble();
+		System.out.println("a       a^2      a^3");
+		System.out.println(number1 +"     "+ number1 * number1 + "      "+ number1* number1* number1  );
+		System.out.println(number2 +"     "+ number2 * number2 + "      "+ number2 * number2 * number2);
+		System.out.println(number3 +"     "+ number3 * number3 + "      "+ number3 * number3 * number3);
+		System.out.println(number4 +"     "+ number4 * number4 + "     "+ number4 * number4 * number4);
+
+	}
+	
+
+}

@@ -1,0 +1,77 @@
+package geometricObjects;
+
+/**
+ * Created by Tulin on 1/25/2017.
+ */
+public class TriangleFromSimpleGeometricObject {
+    private Point A;
+    private Point B;
+    private Point C;
+
+    
+  public void setA(Point a)
+   {
+	    A = a;
+   }
+
+  public void setB(Point b)
+  {
+	   B=b;
+	  
+  }
+  
+  public void setC(Point c)
+  {
+	C=c;
+  }
+  
+  public Point getA()
+  {
+	    return A;
+  }
+
+ public Point getB()
+ {
+	   return B;
+	  
+ }
+ 
+ public Point getC()
+ {
+	return C;
+ }
+ 
+ 
+    
+    public double getArea()
+    {
+     
+    A =	getA();
+    B =	getB();
+    C =	getC();
+      double a=  A.distance(B);
+      double b=  B.distance(C);
+      double c=  C.distance(A);
+      
+      double s = (a+b+c)/2;
+      
+        double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        return area;
+
+    }
+
+
+    public double getPeremiter()
+    {
+    	double a=  A.distance(B);
+        double b=  B.distance(C);
+        double c=  C.distance(A);
+        
+        
+    	double Per=a+b+c;
+        return Per;
+    }
+
+
+
+}

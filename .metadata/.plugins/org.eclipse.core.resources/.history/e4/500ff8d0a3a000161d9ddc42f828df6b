@@ -1,0 +1,78 @@
+
+import java.util.*;
+
+public class CountOccurrences {
+
+	public static void main(String[] args) {
+
+		boolean cont=false;
+		do{
+		Scanner input = new Scanner(System.in);
+		// set array number to a size of 10
+		int[] number = new int[10];
+		// loop to enter the numbers into the
+		for (int i = 0; i < 10; i++) {
+			// prompt user for input and take input
+			System.out.println("Enter a Number ");
+
+			int entered = input.nextInt();
+			// set the spot in the array to the entered number
+			number[i] = (int) entered;
+		}
+
+		// put the array from least to greatest
+		Arrays.sort(number);
+		// loop the length of the array
+		for (int x = 0; x < number.length - 1; x++) {
+			// output a number and the occurence if it is not a duplicate
+			if (number[x] != number[x + 1])
+
+				System.out.println(number[x] + " Occures " + occurence(number, number[x]) + " times");
+
+		}
+		
+		// output the last number
+		System.out.println(number[9] + " Occures " + occurence(number, number[9]) + " times");
+	
+
+// prompt the users if they would like to re run the program
+System.out.println("Would you Like to Run the Program Again? (yes/no)");
+// take user input
+
+String rerun = input.next();
+// if they would like to re run the program changes cont to true
+if (rerun.equalsIgnoreCase("yes"))
+	cont = true;
+
+// terminates program if no loop is needed
+else {
+	cont = false;
+	System.out.println(" Thank You For your time");
+}
+
+
+		}while (cont);// resets do wile
+
+
+
+	}
+
+	// take the array and a number to look for the same number
+	public static int occurence(int[] number, int i) {
+		{
+			// set count to 0
+			int count = 0;
+			// loop the length of the array
+			for (int e = 0; e < number.length; e++) {
+				// if e is the same number as i
+				if (number[e] == i) {
+					// increase counter
+					count++;
+				}
+			}
+			// output the counter
+			return count;
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+// Class: 3:00-4
+// Term: Fall 2016
+// Name: Kyson Manis
+// Instructor: Monisha Verma  
+// Assignment:  1
+//CS 1301
+
+public class Table {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	double X;
+	double  B;
+	double  C;
+	double  Y;
+	// Declair the variable
+		X = (1);
+		B = (2);
+		C = (3);
+		Y = (4);
+	
+	
+		System.out.println("a    a^2    a^3");
+		System.out.println("X" + (1 * 1) + (1 * 1 * 1));
+		System.out.println("2" + (2 * 2) + (2 * 2 * 2));
+		System.out.println("3" + (3 *3 *3) +   (9)   +   27);
+		System.out.println("4     16     64");
+
+	}
+	
+
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SumDigits {
+
+		public static void main(String[] args) {
+			Scanner input = new Scanner(System.in);
+			
+			System.out.print("Enter a number up to three digits ");
+		int	x = input.nextInt();
+			if (x > 999) 
+				System.out.println("The number you have entered is too big.");
+			else{
+				
+			int y = 0;
+			while (x !=0);
+			y+=x%10;
+			x/=10;
+					
+			System.out.println("The sum of the diggits is" + y);
+			}
+		}
+		}
+			

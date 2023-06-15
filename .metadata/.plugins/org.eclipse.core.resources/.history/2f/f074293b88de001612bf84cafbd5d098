@@ -1,0 +1,6 @@
+package moveToIntelegy;
+
+public class RollDice {
+
+	public static void main(System[] args) {
+	

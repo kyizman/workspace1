@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class LocateLargestElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Please Enter the number of rows then coloms");
+			int width = input.nextInt();
+				
+			int height = input.nextInt();
+	
+	double[][] list = new double[height][width];
+	
+	System.out.println("Enter the Numbers in the Array");
+	
+	for(int i = 0; i<height ; i++)
+	{
+		for(int x = 0; x< width;x++)
+		{		list[i][x]= input.nextDouble();}
+	}
+	
+            System.out.println("The Largest Number is at " + Arrays.toString(locateLargest(list)));
+	
+	
+	}
+
+
+
+public static int[] locateLargest(double[][] a)
+{
+	
+int[] largestcord = new int[2];
+	
+
+	double max = a[0][0];
+	int height = a[0].length;		
+	int width = a.length;		
+			
+			for(int y = 0; y<height; y++)
+			{
+				for (int x = 0; x<width;x++)
+				{
+					if(max < a[y][x])
+                                        {
+						max = a[y][x];
+				largestcord[0]=y;
+				largestcord[1]=x;
+                                        }
+				}
+}
+
+			return largestcord;
+}
+}

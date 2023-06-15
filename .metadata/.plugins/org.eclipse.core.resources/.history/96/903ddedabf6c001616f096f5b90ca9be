@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class SumDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+	Scanner input = new Scanner(System.in);
+	// to get a new scanner
+	System.out.print("Enter a number up to 3 digits");
+	
+	int x = input.nextInt();
+	// declair x as the input
+	int k = 0;
+	
+	int q = x % 10;
+	
+	int b = k + q;
+			
+	 int y = x / 10; 
+	
+	}
+	
+	}

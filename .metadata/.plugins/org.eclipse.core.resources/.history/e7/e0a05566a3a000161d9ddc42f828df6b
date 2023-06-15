@@ -1,0 +1,55 @@
+import java.util.*;
+public class SortSelection {
+
+	public static void main (String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		
+	System.out.println("How many names are you inputing?");
+	int ammount = input.nextInt();
+		String[] names = new String[ammount];
+		
+		for(int i = 0; i<ammount; i++ )
+		{
+			System.out.println("Enter a Name");
+			String enterednames = input.next();
+			names[i] =enterednames;
+		
+		}
+	System.out.println(Arrays.toString(names));
+	System.out.println(Arrays.toString(selectionSort(names)));
+	}
+	
+	 public static String[] selectionSort(String[] list) {
+			 
+			 for (int i = 0; i < list.length; i++) {
+
+		            // finds where the smallest value is
+
+		            int number = i;
+
+		            for (int j = i; j < list.length; j++) {
+
+		                if (list[j].compareTo(list[i]) < 0) {
+
+		                    number = j;
+
+		                }
+		            }
+		            // swaps the value 
+		            String sort = list[i];
+
+		            list[i] = list[number];
+
+		            list[number] = sort;
+		            //System.out.println(list[i]);
+		            
+		        }
+				return list;
+
+		 }
+	 }
+
+		        
+
+		    

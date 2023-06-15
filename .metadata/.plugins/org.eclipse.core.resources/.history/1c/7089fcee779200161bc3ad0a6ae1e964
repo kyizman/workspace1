@@ -1,0 +1,95 @@
+import java.util.Scanner;
+
+public class Crapsgame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		boolean cont = false;
+		int firstroll;
+		int secondroll;
+		int add;
+		int number = 0 ;
+		int r1 =0;
+		int r2 =0;
+	
+		
+		
+			System.out.println("Would you like to play a game of craps (yes/no)");
+			String answer = input.next();
+			if(answer.equals("yes"))
+			{
+				firstroll = RollDice();
+				secondroll =RollDice();
+				
+				add = firstroll + secondroll;
+				System.out.println(add);
+				if (add == 2 || add== 3 || add == 12)
+				{
+					System.out.println("You rolled " + firstroll + " + " + secondroll + " = " + add);
+				System.out.println("You loose");
+				}
+				else if(add == 7 || add == 11)
+				{
+					System.out.println("You rolled " + firstroll + " + " + secondroll + " = " + add);
+
+					System.out.println("You win");
+					
+				}
+				
+					
+						else
+						{
+							
+							System.out.println("You rolled " + firstroll+ " + " + secondroll + " = " + add);
+							while( number != 7)
+								
+								r1 = RollDice();
+							 	r2 = RollDice();
+							number = r1 + r2;
+
+							if (number == 7)
+							{
+								System.out.println("You rolled " + r1 + " + " + r2 + " = " + number);
+							System.out.println("You loose");
+						
+							}
+							
+							
+							else 
+							{
+								System.out.println("You rolled " + r1 + " + " + r2 + " = " + number);
+
+								System.out.println("You win");
+								
+							}
+							
+						}
+				
+					
+				
+			}
+			
+				
+			
+			else
+			{
+				System.out.println("Move along then your taking up space at the table");
+			}	
+	}
+	
+	public static int RollDice() {
+
+		int random = (int) (1 + Math.random() * 6);
+
+		return random;
+	}
+
+
+}
+
+
+
+
+

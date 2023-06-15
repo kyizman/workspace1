@@ -1,0 +1,52 @@
+// 1301
+// fall 2016
+// Kyson Manis
+// Monisha Verma
+// lab 1
+import java.util.Scanner;
+
+public class Lab_2_5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+//scanner
+
+System.out.println("Enter Pennies" );
+//prompt user for ammount of coins and assigning variables 
+	int Pennies = input.nextInt();
+	
+	System.out.println("Enter Nickles");
+	
+	int Nickles = input.nextInt(); 
+
+	System.out.println("Enter Dimes");
+	
+	int Dimes = input.nextInt(); 
+	
+	System.out.println("Enter Quaters");
+	
+	int Quarters = input.nextInt();
+	
+	 int P = Pennies;
+	 int N = Nickles;
+	 int D = Dimes;
+	 int Q = Quarters;
+	 //Changing the value name for clenlyness
+	int Answer = ((P + (N * 5) + (D * 10) + (Q * 25)));
+	
+	int total =(Answer/100);
+	
+	int remainder = (Answer % 100);
+
+	System.out.println(total);
+	
+	System.out.println(remainder);
+			 
+	
+		
+	}
+	
+
+
+}

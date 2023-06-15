@@ -1,0 +1,35 @@
+// 1301
+// fall 2016
+// Kyson Manis
+// Monisha Verma
+// HW 2
+import java.util.Scanner;
+public class DrivingCost {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		//prompt user
+System.out.println(" Enter the distance driven");
+//x as distance driven
+double x = input.nextDouble();
+//prompt user for miles per gallon
+System.out.println("Enter your cars miles per gallon");
+//y= mpg
+double y = input.nextDouble();
+//prompt for price per gallon
+System.out.println("Enter the price per gallon");
+// z = price per gallon
+double z = input.nextDouble();
+
+//formula for price of diving
+double cost = (x/y*z);
+//to round the number
+double reCost = (double) Math.round (cost * 100) /100;
+//print answer	
+	System.out.println("The cost of driving is" +"$" + reCost);
+	}
+	
+	}

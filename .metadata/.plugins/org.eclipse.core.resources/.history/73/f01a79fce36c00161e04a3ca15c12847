@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class SumDigits {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+	System.out.println("Enter a number that is less than 1000 (positive)");
+	int x = input.nextInt();
+	
+	 int sum = 0;
+	while (x >0);
+	
+	sum+= x % 10;
+	// to get the remainder
+  x /=10;
+  //to get whats left
+ 
+ System.out.println(" the sum of the diggits is" + sum);
+	}
+	}
+	

@@ -1,0 +1,56 @@
+import java.util.*;
+public class SortSelection {
+
+	public static void main (String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		
+	System.out.println("How many names are you inputing?");
+	int ammount = input.nextInt();
+		String[] names = new String[ammount];
+		
+		for(int i = 0; i<ammount; i++ )
+		{
+			System.out.println("Enter a Name");
+			String enterednames = input.next();
+			names[i] =enterednames;
+		
+		}
+	
+	System.out.println(Arrays.toString(selectionSort(names)));
+	}
+	
+	 public static String[] selectionSort(String[] list) {
+	
+		 char [] firstletters = new char[list.length] ;
+				
+		 for (int i = 0; i < list.length - 1; i++) {
+		 // Find the minimum in the list[i..list.length-1]
+		 String currentMin = list[i];
+		 currentMin.toLowerCase();
+		 char sorter = currentMin.charAt(0);
+		 char currentMinIndex = sorter;
+		 firstletters[i] =  currentMinIndex;
+		
+		 Arrays.sort(list);
+		 
+		 for (int j = 0; j < list.length-1; j++) {
+			 
+		if (firstletters[j+1] < firstletters[j]) {
+			 
+			list[j] = list[j+1];
+			
+			 if(firstletters[j+1] > firstletters[j])
+			 {}
+		 
+		}
+			   
+			   
+		 }
+		 }
+	
+		 
+		return list;
+	 }
+}
+		

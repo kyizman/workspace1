@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class DrivingCost {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+System.out.println(" Enter the distance driven");
+double x = input.nextDouble();
+System.out.println("Enter your cars miles per gallon");
+double y = input.nextDouble();
+System.out.println("Enter the price per gallon");
+double z = input.nextDouble();
+
+double cost = (x/y*z);
+double recost = (double) Math.round (cost * 100) /100;	
+	System.out.println("The cost of driving is" +"$" + recost);
+	}
+	
+	}

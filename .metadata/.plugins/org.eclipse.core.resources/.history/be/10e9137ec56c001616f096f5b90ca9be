@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class SumDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	//get new scanner
+	Scanner input = new Scanner(System.in);
+	
+	System.out.print("Enter a number up to 3 digits");
+	//Declair x as the input
+	int x = input.nextInt();
+	
+	int sum = 0;
+	
+	while (x != 0);{
+	
+	
+	//to get the last number
+	
+	int remainder = x%10;
+	
+	 sum = (sum + remainder);
+	
+	x = ( x/10);
+	}
+	System.out.println("The sum of the digits is" + sum );
+	
+			
+	
+
+}
+}

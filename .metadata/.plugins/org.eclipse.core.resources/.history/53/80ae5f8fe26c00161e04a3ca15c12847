@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class SumDigits {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter a number up to three digits ");
+		double x = input.nextInt();
+		if (x >= 999)
+			System.out.println("That number is too big.");
+		
+	else {
+	double sum = 0;		
+			while (x != 0) 
+	// to loop 
+	sum += x % 10;
+	// cut last digit
+	double y = x / 10;
+	
+	double redo= sum + y;
+			
+			System.out.println("The sum of the three digits is" + redo);
+		}
+	}
+}

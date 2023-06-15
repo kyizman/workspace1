@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Lab_2_5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+	System.out.println("Pennys:" + "\n" + "Nickles:" );
+	System.out.println("Dimes:" + "\n" + "Quaters:");
+	double Pennys = input.nextDouble(); Pennys = .01;
+	double Nickles = input.nextDouble(); Nickles = .05;
+	double Dimes = input.nextDouble(); Dimes = .10;
+	double Quarters = input.nextDouble(); Quarters = .25;
+	
+	}
+	
+
+
+}

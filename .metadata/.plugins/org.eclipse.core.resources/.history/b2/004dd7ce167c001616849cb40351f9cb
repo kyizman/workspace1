@@ -1,0 +1,36 @@
+import java.util.*;
+public class KeyPad {
+Scanner input = new Scanner(System.in);
+{
+System.out.print(" Enter a letter");
+String Enter = input.next();
+
+Enter.toLowerCase();
+
+if (Enter.equals("a") || Enter.equals("b") || Enter.equals("c"))
+{
+System.out.print("The Corresponding Number is 2");
+}
+	else if (Enter.equals("d") || Enter.equals("e") || Enter.equals("f"))
+{System.out.println("The Corresponding Number is 3");}
+
+	else if (Enter.equals("g") || Enter.equals("h") || Enter.equals("i"))	
+{System.out.println("The Corresponding Number is 4");}
+	
+	else if (Enter.equals("j") || Enter.equals("k") || Enter.equals("l"))	
+{System.out.println("The Corresponding Number is 5");}
+	
+	else if (Enter.equals("m") || Enter.equals("n") || Enter.equals("o"))	
+{System.out.println("The Corresponding Number is 6");}
+	
+	else if (Enter.equals("p") || Enter.equals("q") || Enter.equals("r") || Enter.equals("s"))
+{System.out.println("The Corresponding Number is 7");}
+	
+	else if (Enter.equals("t") || Enter.equals("u") || Enter.equals("v"))
+{System.out.println("The Corresponding Number is 8");}
+	
+	else if (Enter.equals("w") || Enter.equals("x") || Enter.equals("y") || Enter.equals("z"))
+{System.out.println("The Corresponding Number is 9");}
+}
+
+}

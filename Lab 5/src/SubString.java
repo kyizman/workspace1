@@ -1,0 +1,30 @@
+// 1301
+// fall 2016
+// Kyson Manis
+// Monisha Verma
+// lab 5
+import java.util.*;
+public class SubString {
+	public static void main(String[] args){
+//scanner
+		Scanner input = new Scanner(System.in);
+{// Promt user for a string
+System.out.println("Enter a string");
+String first = input.next();
+//promt users for a second string
+System.out.println("Enter a second string");
+String second = input.next();
+//see if the second string is in the first
+int x = first.indexOf(second);
+//if the string is part of the other
+if (x==0)
+	//output that the string is part of the string
+{System.out.println(second + " is a substring of " + first);}
+//if the string is not part of the other
+else 
+	//output that the string is not a substring
+{System.out.println(second + " is not a substring of " + first);
+}
+}
+}
+}

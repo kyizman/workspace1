@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Gratuity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+			System.out.println("Input subtotal:");
+			System.out.println("Input gratuity rate:");
+				double number1 = input.nextDouble();
+				double number2 = input.nextDouble();
+			System.out.println("gratuity:$" + number1 * (number2/100));	
+			System.out.println("total:$" + (number1 + (number1 * (number2/100))));
+			
+			
+
+	}
+
+}

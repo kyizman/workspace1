@@ -1,0 +1,72 @@
+public class Trialanderror
+//A bank account has a balance that can be 
+//changed by deposits and withdrawals.
+public class BankAccount
+{
+private double balance;
+private String name;
+
+// Construct an account with initial balance
+public BankAccount(String acctName, double initialBalance)
+{
+   name =acctName;
+   balance = initialBalance;
+}
+
+// Deposits money into the account
+public void deposit(double amount)
+{
+balance = balance + amount;
+}
+
+// Withdraw money from the account
+public void withdraw(double amount)
+{
+if(amount <= balance)
+balance = balance - amount;
+else System.out.println("Insufficient Funds!");
+}
+
+// Get the current balance of the account.
+public double getBalance()
+{
+return balance;
+}
+
+public String getName()
+{
+return name;
+}
+
+public String toString()
+{
+return (getName() + " has " + getBalance() + " dollars.");
+}
+}
+//Given the BankAccount class above, what is the output of the following program?
+
+//Test class BankAccount.
+public class TestBankAccount
+{
+
+{
+   BankAccount acct1 = new BankAccount("Amy", 1000.0);
+   System.out.println(acct1.getBalance());
+   BankAccount acct2 = new BankAccount("Mike", 550.00);
+   System.out.println(acct2.getBalance());
+   acct1.withdraw(250.00);
+   acct2.withdraw(250.00);
+   acct2.deposit(250.00);
+   System.out.println(acct1.getBalance());
+   System.out.println(acct2.getBalance());
+   acct1.deposit(100.00); 
+   acct1.deposit(50.00); 
+   acct1.deposit(100.00); 
+   acct2.withdraw(50.0);
+   acct2.deposit(250.00);
+   System.out.println(acct1.getBalance());
+   System.out.println(acct1);
+   System.out.println(acct1.getBalance());
+   System.out.println(acct2);
+}
+}

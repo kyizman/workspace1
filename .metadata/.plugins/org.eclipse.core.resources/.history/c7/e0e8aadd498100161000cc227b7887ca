@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class MathMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner (System.in);
+
+System.out.println("Enter a negative number");
+		int neg = input.nextInt();
+int negabs =  Math.abs(neg);
+System.out.println("The Absolute Value of " + neg + " is " + negabs);
+
+
+System.out.println("Enter a Floating-Point Number for the Angle");
+double flo = input.nextDouble();
+double cos = Math.cos(flo);
+double sin = Math.sin(flo);
+double tan = Math.tan(flo);
+System.out.println("The Sine of " + flo + " is" + sin);
+System.out.println("The Cosine of " + flo + " is " + cos);
+System.out.println("The Tangent of " + flo + " is " + tan);
+
+
+System.out.println("Enter a Floating-Point Number");
+double house = input.nextDouble();
+double cealing = Math.ceil(house);
+double floors = Math.floor(house);
+System.out.println("The floor of " + house +" is " + floors);
+System.out.println("The Ceiling value of " + house + " is " + cealing );
+
+
+System.out.println("Enter x or the Base Number(Floating-Point Number)");
+double x = input.nextDouble();
+System.out.println("Enter Y or the Power (Floating-Point Number)");
+Double y = input.nextDouble();
+Double power =  Math.pow(x,y);
+System.out.println(x +" Raised by the power of " + y + " is " + power);
+
+
+System.out.println( "Enter a Whole Number");
+int unsqr = input.nextInt();
+int sqr = (int) Math.sqrt(unsqr);
+System.out.println("The Square root of " + unsqr + " is " + sqr);
+	}
+
+}
